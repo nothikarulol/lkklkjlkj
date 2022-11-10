@@ -1,0 +1,177 @@
+.gameViewFullscreen {
+    margin-bottom: 0;
+    border: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+    --primary-text-color: #ccc;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+:root {
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+    transition: var(--tran-03);
+}
+::-webkit-scrollbar-track {
+    background: var(--primary-color-light);
+    border-radius: 3px;
+}
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.fadedBackground {
+    background-color: var(--sidebar-color);
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    position: absolute;
+    transition: var(--tran-05);
+}
+  .gameView {
+    width: 40%;
+    height: auto;
+    max-height: 90%;
+    background-color: var(--sidebar-color);
+    position: relative;
+    margin: auto;
+    transform: translateY(25px);
+    border-radius: 15px;
+    padding: 15px;
+    padding: 2vmin;
+    padding-bottom: 35px;
+    padding-bottom: 2.5%;
+    padding-left: 20px;
+    padding-left: 3vmin;
+    padding-right: 20px;
+    padding-right: 3vmin;
+    z-index: 100000;
+    transition: var(--tran-05);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.gameViewTitle {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--text-color);
+}
+.gameViewBack {
+    background: transparent;
+    /* background: var(--primary-color); */
+    right: 3vmin;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    /* transform: translate(1355%, -105%); */
+    transform: translateY(-105%);
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    transition: var(--tran-05);
+    color: var(--text-color);
+    z-index: 999999;
+    position: fixed;
+    border: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+user agent stylesheet
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+.gameViewImg {
+    width: 100%;
+    height: auto;
+    margin-right: 50%;
+    border-radius: 5px;
+}
+.gameViewText {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+  color: var(--text-color);
+}
