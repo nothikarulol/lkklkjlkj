@@ -1,4 +1,68 @@
-<!DOCTYPE html>
-<html>
-<script src="https://unpkg.com/@tomphttp/bare-client@1.1.0/dist/BareClient.cjs"></script>
+<DOCTYPE html>
+  <html lang-"en"
+        <head>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RZF5EEF09R');
+    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  
+  <div class="gameViewFullscreen" id="gameViewFullscreen">
+            <div class="fadedBackground" id="fadedBackground"></div>
+            <div class="gameView" id="gameViewBox" onclick="clicked()">
+                <div class="gameViewTitle" id="gameViewTitle"></div>
+                <button class="gameViewBack" onclick="document.getElementById('gameViewFullscreen').style.display = 'none', document.body.style.overflow = 'visible'">
+                    <i class="bx bx-x icon" style="transform: translateY(-5px)"></i>
+                </button>
+                <img class="gameViewImg" id="gameViewImg">
+                <div class="gameViewSubTitle">Description</div>
+                <div class="gameViewText" id="gameViewDescription"></div>
+                <br>
+                <div style="display: inline-table; width: 50%; float: left;">
+                    <div class="gameViewSubTitle">Genre</div>
+                    <div class="gameViewText" id="gameViewGenre"></div>
+                </div>
+                <div style="display: inline-table; width: 50%; float: left;">
+                    <div class="gameViewSubTitle">Publisher</div>
+                    <div class="gameViewText" id="gameViewPublisher"></div>
+                </div>
+                <br><br><br>
+                <button class="playButton" id="playButton">
+                    <i class="bx bx-play icon" style="font-size: 20px; padding-right: 3px; transform: translateY(3px);"></i>
+                    <span>PLAY</span>
+                </button>
+                <div id="" class="reportButton" onclick="optionsMenu('splashOptions')">
+                    <i class="bx bx-dots-horizontal-rounded icon"></i>
+                    <!-- <span class="hovertext7">Options</span> -->
+                    <div id="splashOptions" class="dropdown-content" style="transform: translate(0, -140px); right: 3vmin">
+                        <button onclick="" class="dropbtn splashOp" id="favoriteOption2">
+                            <span class="bx bx-star icon" style="transform: translateY(1px)" id="favStarOption2"></span>
+                            <span style="padding: 5px" id="favoriteTextOption2">Favorite</span>
+                        </button>
+                        <button onclick="window.open('https://forms.gle/nw1mY6aqgSHdbm5E7', '_blank')" class="dropbtn splashOp">
+                            <span class="bx bxs-flag icon" style="transform: translateY(1px)"></span>
+                            <span style="padding: 5px">Report</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- <button class="reportButton" onclick="window.open('https://forms.gle/nw1mY6aqgSHdbm5E7', '_blank')">
+                    <i class='bx bxs-flag-alt icon'></i>
+                </button> -->
+            </div>
+        </div>
+  
+  
+  
+  <div class="container" id="container" style="width: 30%;"><a class="game_click" id="click"><i class="bx bx-star icon" id="fav_icon"></i><img class="game_img" id="img" src="https://sgs-cdn.vercel.app/Images/pokemon_leaf_green.png"><div class="game_title" id="title">Pokémon Leaf Green</div><div class="game_genre" id="genre">Adventure</div></a></div>
+<a class="game_click" id="click"><i class="bx bx-star icon" id="fav_icon"></i><img class="game_img" id="img" src="https://sgs-cdn.vercel.app/Images/pokemon_leaf_green.png"><div class="game_title" id="title">Pokémon Leaf Green</div><div class="game_genre" id="genre">Adventure</div></a>
+<img class="game_img" id="img" src="https://sgs-cdn.vercel.app/Images/pokemon_leaf_green.png">
+<div class="game_title" id="title">Pokémon Leaf Green</div>
+<div class="game_genre" id="genre">Adventure</div>
+  </a>
+</div>
 </html>
